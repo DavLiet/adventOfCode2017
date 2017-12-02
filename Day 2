@@ -1,0 +1,15 @@
+////////////////////////////////////
+//Part 1
+
+int sum = 0;
+int[][] matrix = new int[16][16];
+		
+int[] arr = new int[16];
+for(int row=0; row<matrix.length;row++){
+			for(int col=0; col<matrix.length;col++){
+				arr[col] = matrix[row][col];
+				sum+=difference(arr);
+		}
+}
+		
+System.out.println(sum);
